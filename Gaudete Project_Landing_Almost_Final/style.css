@@ -1,0 +1,572 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 0, 106, 1) 14%,
+    rgba(117, 4, 246, 1) 50%,
+    rgba(57, 0, 149, 1) 91%
+  );
+}
+
+body::after {
+  content: "";
+  background-image: url(backgroundtest.jpg);
+  background-size: cover;
+  height: 100em;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* Nav */
+
+.main-h1,
+.logo {
+  color: white;
+  display: inline;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+}
+
+.login {
+  color: white;
+  display: inline;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  position: relative;
+  padding: 30px;
+  bottom: 11px;
+}
+
+.gaudete-box {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.gaudete-logo {
+  margin: auto;
+  width: 50px;
+}
+
+.login:hover,
+.login:focus {
+  background-color: rgb(177, 177, 177);
+  animation-name: loginhover;
+  animation-duration: 0.5s;
+}
+
+.navbarbk {
+  background: linear-gradient(
+    100deg,
+    rgba(1, 0, 106, 1) 14%,
+    rgba(117, 4, 246, 1) 50%,
+    rgba(57, 0, 149, 1) 91%
+  );
+  background-size: 400% 400%;
+  border-bottom: groove;
+  border-bottom-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 5.1em;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.navbarbk .h1:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+.drop {
+  background-color: darkblue;
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 24px;
+  border-color: black;
+  cursor: pointer;
+  bottom: 0.325em;
+  position: relative;
+}
+
+.drop:hover,
+.drop:focus {
+  background-color: rgb(177, 177, 177);
+  animation-name: loginhover;
+  animation-duration: 0.5s;
+}
+
+.grid-dropdown {
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: red;
+  max-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+.grid-dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* Middle Section */
+
+.middle {
+  overflow: hidden;
+  height: 20em;
+  display: flex-box;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.header-container {
+  color: white;
+  height: 5em;
+  width: 80%;
+  margin: auto;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  display: flex-box;
+  justify-content: center;
+  word-spacing: 1em;
+}
+
+.main-ph {
+  display: flex-box;
+  text-align: center;
+  word-spacing: 0;
+  color: white;
+  word-spacing: 0.25em;
+  margin-top: 2em;
+}
+
+.main-head {
+  font-size: 2em;
+  color: dargrey;
+  font-family: "Monoton", cursive;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.bl-middle {
+  overflow: hidden;
+  height: 20em;
+  display: flex-box;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.main-text {
+  color: white;
+  height: 10%;
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.main-par {
+  line-height: 2em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*Info Sections*/
+
+.info {
+  overflow: hidden;
+  height: 100em;
+
+  display: flex-box;
+  justify-content: space-evenly;
+  height: auto;
+  width: auto;
+}
+
+.info-section1 {
+  margin: auto;
+  margin-top: 5em;
+  width: 10%;
+  max-width: 100%;
+  min-width: 50%;
+  height: 50%;
+  max-height: 100%;
+  min-height: 50%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.appimage1 {
+  margin-top: 2em;
+  max-width: 50%;
+  max-height: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.p-section1 {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.p-section2 {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.p-section3 {
+  display: flex;
+  justify-content: center;
+}
+
+.p-section4 {
+  display: flex;
+  justify-content: center;
+}
+
+.pimg {
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 80em;
+  background-color: darkred;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.info2 {
+  overflow: hidden;
+  height: 200em;
+  display: flex-box;
+  justify-content: space-evenly;
+  height: auto;
+  width: auto;
+}
+
+.info-section2 {
+  margin: auto;
+  width: 10%;
+  max-width: 100%;
+  min-width: 50%;
+  height: 50%;
+  max-height: 100%;
+  min-height: 50%;
+  display: flex-box;
+  justify-content: center;
+}
+
+.appimage2 {
+  max-width: 50%;
+  max-height: 50%;
+  display: flex;
+
+  justify-content: center;
+  margin: auto;
+}
+
+.pimg2 {
+  text-transform: uppercase;
+  font-size: 1em;
+  width: 80em;
+  background-color: darkred;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+/* Download Links */
+
+.divimg2 {
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+}
+.divimg3 {
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.img {
+  display: inline-flex;
+}
+
+.img1 {
+  display: inline-flex;
+  width: 70px;
+}
+
+.img1:hover {
+  opacity: 0.5;
+}
+
+.img2 {
+  display: inline-flex;
+  width: 200px;
+}
+
+.img2:hover {
+  opacity: 0.5;
+}
+
+.img3 {
+  display: inline-flex;
+  width: 200px;
+}
+
+.img3:hover {
+  opacity: 0.5;
+}
+
+.download-links {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+/* Footer */
+
+.p1 {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 1em;
+  font-weight: bold;
+  width: 33%;
+  text-align: center;
+}
+
+footer {
+  background: linear-gradient(
+    0deg,
+    rgba(1, 0, 106, 1) 14%,
+    rgba(117, 4, 246, 1) 50%,
+    rgba(57, 0, 149, 1) 91%
+  );
+  border-bottom: groove;
+  border-bottom-color: black;
+  display: inline-flex;
+  height: 6.1em;
+  width: 100%;
+
+  /* justify-content: space-evenly;
+  
+  align-items: baseline;
+  justify-content: space-between; */
+}
+
+.logo {
+  width: 33%;
+  text-align: center;
+}
+
+.un-list {
+  display: flex;
+  list-style-type: none;
+  width: 33%;
+}
+
+.link {
+  display: flex;
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 0.8em;
+  color: white;
+}
+
+/* Slide Show */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 11em;
+  position: relative;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 0.5em;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  display: flex;
+  width: 40em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 5em;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Feat */
+
+.features {
+  height: 40em;
+  background-color: white;
+  display: flex;
+}
+
+.feat-main-div,
+.hfea,
+p {
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+  color: Black;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.text-box-fea {
+  width: 80%;
+  margin: auto;
+}
+.hfea {
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+
+.feature-img-container {
+  display: flex;
+  margin-top: 2em;
+}
+
+.feat1 {
+  width: 33%;
+}
+
+#guitar {
+  width: 50%;
+  height: 50;
+}
+
+.feat2 {
+  width: 33%;
+}
+.feat3 {
+  width: 33%;
+}
+
+.button {
+  margin-top: 3em;
+}
+
+@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
+  .feature-img-container {
+    display: flexbox;
+  }
+}
